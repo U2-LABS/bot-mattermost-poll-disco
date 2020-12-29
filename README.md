@@ -1,4 +1,4 @@
-# bot-top-ranking
+# bot-mattermost-poll-disco
 ___
 ## Start 
 1. Install all requirements from txt file
