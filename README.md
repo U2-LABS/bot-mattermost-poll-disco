@@ -9,7 +9,15 @@ $ pip3 install -r requirements.txt
 ```sh
 $ touch .env
 ```
-3. Run bot
+3. Add settings mmpy_bot
+
+In main directory tun the follow command
+```sh
+#on Linux
+MATTERMOST_BOT_SETTINGS_MODULE=mmpy_bot_settings
+```
+
+4. Run bot
 ```sh
 $ python3 -m bot_mattermost_music
 ```
