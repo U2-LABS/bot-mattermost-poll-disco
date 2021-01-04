@@ -66,7 +66,7 @@ def vote_for_song(message):
         message.reply(reply_message)
     else:
         state.config["top_songs"].clear()
-        if message.get_user_id() not in Song.get_by_id(idx).voted_users:
+        if str(message.get_user_id()) not in Song.get_by_id(idx).voted_users:
             song_item = Song.get_by_id(idx)
             song_item.update(
                 mark=song_item.mark + 1
